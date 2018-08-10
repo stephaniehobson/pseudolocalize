@@ -1,0 +1,13 @@
+#!/bin/bash
+VERSION="$1"
+if [ "z$VERSION" = z ]; then
+  echo "Usage: $0 <version>"
+  exit 1
+fi
+
+# check icon included
+ls icons/p12e-48.png || exit 1
+
+rm -rf */.DS_Store
+zip -r ../p12e.zip README.md manifest.json LICENSE popup/ icons/ content_scripts/
+git tag -a pseudolocalize-$VERSION -m "$VERSION release"

@@ -1,0 +1,55 @@
+/*
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
+*/
+
+html,
+body {
+    background-color: #fff;
+    width: 200px;
+}
+
+button {
+    background-color: #d7d7dbf;
+    border-radius: 2px;
+    border: 2px solid transparent;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 8px;
+    padding: 8px;
+    text-align: center;
+    width: 100%;
+}
+
+button:first-child {
+    margin-top: 0;
+}
+
+button:hover,
+button:focus {
+    border-color: #d7d7db;
+}
+
+button:focus {
+    box-shadow: 0 0 0 1px #0a84ff inset,
+        0 0 0 1px #0a84ff,
+        0 0 0 4px rgba(10, 132, 255, 0.3);
+}
+
+button:active {
+    background-color: #b1b1b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#error-content {
+    background-color: #a4000f;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 8px;
+    padding: 8px 8px 7px 8px;
+}

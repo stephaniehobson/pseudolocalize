@@ -1,0 +1,20 @@
+{
+  "description": "A tool for testing localization. Insert accented characters and make words 30% longer or swap text to read right to left.",
+  "manifest_version": 2,
+  "name": "Pseudolocalize",
+  "version": "1.0.0",
+  "homepage_url": "http://stephaniehobson.ca",
+  "icons": {
+    "48": "icons/p12e-48.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/p12e-48.png",
+    "default_title": "Pseudolocalize",
+    "default_popup": "popup/p12e.html"
+  }
+}
